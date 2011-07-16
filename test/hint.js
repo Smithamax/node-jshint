@@ -146,7 +146,7 @@ describe("hint", function () {
 
     it("ignores directories", function () {
         var targets = ["dir/file.js", "dir2/foo/file.js", "file0.js"],
-            ignore = ["dir2/*"];
+            ignore = ["dir2"];
 
         spyOn(fs, "readFileSync").andReturn("data");
 
